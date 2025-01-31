@@ -1,0 +1,12 @@
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+  double n,result;
+  printf("Enter a number:");
+  scanf("%lf",&n);
+  printf("%lf",sqrt(n));
+
+
+    return 0;
+}
