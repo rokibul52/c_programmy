@@ -1,0 +1,47 @@
+
+/*
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+ double x = 5.58;
+ double result = round(x);//round এর কাজ হচ্ছে দশমিকের পর ৪ এর উপরে থাকলে দশমিকের বামে ১ যোগ করবে । 
+ printf("round(%lf) = %lf\n",x,result);
+
+
+    return 0;
+}
+*/
+/*#include<stdio.h>
+#include<math.h>
+int main()
+{
+ double x = 5.5826546542;
+ double result = trunc(x);//trunc এর কাজ হচ্ছে দশমিকের পরের অংশ বাদ দেওয়া। 
+ printf("trunc(%lf) = %lf\n",x,result);
+
+
+    return 0;}
+    */
+/*
+  #include<stdio.h>
+#include<math.h>
+int main()
+{
+ double x = 5.58;
+ double result = ceil(x);//ceil এর কাজ হচ্ছে দশমিকের পরের নিকটবর্তী পূর্ণ সংখযা প্রদর্শন করা । 
+ printf("ceil(%lf) = %lf\n",x,result);
+
+
+    return 0;}
+    */
+   #include<stdio.h>
+#include<math.h>
+int main()
+{
+ double x = 5.58;
+ double result = floor(x);//floor এর কাজ হচ্ছে দশমিকের আগের নিকটবর্তী পূর্ণ সংখযা প্রদর্শন করা । 
+ printf("floor(%lf) = %lf\n",x,result);
+
+
+    return 0;}
