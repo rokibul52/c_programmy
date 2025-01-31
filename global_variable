@@ -1,0 +1,11 @@
+#include<stdio.h>
+int a=10;//global function starts before main function and works everywhere.
+int main(){
+   
+    printf("Inside the main function a = %d\n",a);
+    display();
+}
+void display()
+{
+  printf("Inside the main function a = %d\n",a);  
+}
