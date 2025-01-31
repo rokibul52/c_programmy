@@ -1,0 +1,10 @@
+#include<stdio.h>
+int main()
+{
+    float c,F;
+    printf("Enter centigrade value:");
+    scanf("%f",&c);
+    F=((9*c)/5)+32;
+    printf("F=%.2f",F);
+    return 0;
+}
