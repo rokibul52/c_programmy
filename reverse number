@@ -12,7 +12,7 @@ int main()
    sum=(sum*10)+remainder;
    temp=temp/10;
    }
-   printf("sum of digit: %d",sum);
+   printf("Reverse number is : %d",sum);
    
     
 }
