@@ -1,0 +1,26 @@
+#include<stdio.h>
+int main()
+{
+    int numbers[]={70,10,90,50,4};
+    int searchNumber=4;
+    int found = -1;
+
+    for(int index = 0; index<5; index++)
+    {
+        if(searchNumber==numbers[index])
+    { found=index;
+        break;
+    }    
+    
+        
+        
+    }
+    if(found==-1)
+    {
+        printf("%d is not found");
+    }
+    else
+    {
+        printf("%d is found int the position of %d",searchNumber,found);
+    }
+}
