@@ -1,0 +1,23 @@
+#include<stdio.h>
+int main()
+{
+    int n;
+    printf("Enter your number:");5
+    scanf("%d",&n);
+    int sum=0,numbers[n];
+    for ( int index = 0; index <5; index++)
+    {   
+        printf("Enter number[%d]:",index+1);
+        scanf("%d",&numbers[index]);
+    }
+    for(int index=0; index<5; index++)
+    {
+        printf("%d\n",numbers[index]);
+    }
+    for(int index=0; index<5;index++)
+    {
+        sum=sum+numbers[index];
+    }
+    printf("the sum is= %d",sum);
+    
+}
