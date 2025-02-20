@@ -1,0 +1,13 @@
+#include<stdio.h>
+int main()
+{
+    int numbers[]={20,30,40,50,60};
+    int maximum=numbers[0];
+    for(int index = 1; index<5; index++)
+    {
+        if(numbers[0]<numbers[index])
+        maximum = numbers[index];
+        
+    }
+    printf("%d",maximum);
+}
