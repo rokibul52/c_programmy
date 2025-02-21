@@ -1,0 +1,7 @@
+#include<stdio.h>
+int main()
+{
+    int numbers[]={10,12,3};
+    int lengthofArray=sizeof(numbers)/sizeof(numbers[0]);
+    printf("%d",lengthofArray);
+}
