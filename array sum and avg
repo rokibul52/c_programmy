@@ -1,0 +1,22 @@
+ #include<stdio.h>
+ int main()
+ {
+    int n,sum=0;
+    printf("Enter array size:");
+    scanf("%d",&n);
+    int numbers[n];
+    for(int index=0; index<n; index++)
+    {
+        printf("Enter for index %d:",index);
+        scanf("%d",&numbers[index]);
+    }
+    for(int index=0; index<n; index++)
+    {
+       sum=sum+numbers[index];
+    }
+    printf("sum is %d\n",sum);
+    float avg=(float)sum/n;
+    printf("average is %.2f",avg);
+
+ }
+   
