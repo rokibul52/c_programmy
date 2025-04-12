@@ -1,0 +1,44 @@
+#include<stdio.h>
+#include<limits.h>
+int main()
+{
+    int number[]={9,5,6,-1,7};
+    int firstmax=number[0];
+    int firstmin=number[0];
+    int secondmax=INT_MIN,secondmin=INT_MAX;
+    int length=sizeof(number)/sizeof(number[0]);
+    for (int i = 0; i < length; i++)
+    {
+        if(firstmin>number[i])
+        {
+            firstmin=number[i];
+    
+        }
+        if(firstmax<number[i])
+        {
+            firstmax=number[i];
+            
+        }
+    }
+    for (int i = 0; i < length; i++)
+    {
+        if(number[i]!=firstmax && number[i]>secondmax)
+        {
+            secondmax=number[i];
+    
+        }
+        if(number[i]!=firstmin && number[i]<secondmin)
+        {
+            secondmin=number[i];
+            
+        }
+    }
+    
+    printf("Firstmax is %d\n",firstmax);
+    printf("Firstmin is %d\n",firstmin);
+    printf("Secondtmax is %d\n",secondmax);
+    printf("Secondmin is %d\n",secondmin);
+    
+
+    
+}
