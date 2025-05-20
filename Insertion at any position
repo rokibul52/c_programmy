@@ -1,0 +1,21 @@
+#include<stdio.h>
+int main()
+{
+    int number[100]={4,5,6,3}, value,position;
+    int size=4;
+    printf("Enter the position of number where will be inserted:");
+    scanf("%d", &position);
+    printf("Enter the number:");
+    scanf("%d", &value);
+    for(int i=size-1; i>=position-1; i--)
+    {
+        number[i+1]=number[i];
+    }
+    size++;
+    number[position-1]=value;
+    for(int i=0; i<size; i++)
+    {
+        printf("%d ", number[i]);
+    }
+
+}
