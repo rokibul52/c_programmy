@@ -1,0 +1,41 @@
+#include<stdio.h>
+int main()
+{
+    int number[10];
+    int odd=0,odd_sum=0,odd_count=0;
+    int even=0,even_sum=0,even_count=0;
+    printf("Enter 10 numbers:\n");
+    for (int i = 0; i < 10; i++)
+    {
+        printf("Enter number for position %d:",i+1);
+        scanf("%d",&number[i]);
+    }
+    printf("Even numbers are:");
+    for (int i = 0; i < 10; i++)
+    {
+       if (number[i]%2==0)
+       {
+        printf("%d ",number[i]);
+        even_sum+=number[i];
+        even_count+=1;
+       }
+        
+    }
+    printf("\nOdd numbers are:");
+    for (int i = 0; i < 10; i++)
+    {
+       if (number[i]%2!=0)
+       {
+        printf("%d ",number[i]);
+        odd_sum+=number[i];
+        odd_count+=1;
+       }
+        
+    }
+    printf("\nEven sum is = %d and odd sum is = %d\n",even_sum,odd_sum);
+    printf("\nThe number of even is = %d and the number of odd is = %d\n",even_count,odd_count);
+    int even_average=even_sum/even_count;
+    int odd_average=odd_sum/even_count;
+    printf("The average of even is = %d and odd is = %d",even_average,odd_average);
+    
+}
